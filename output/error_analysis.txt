@@ -1,0 +1,22 @@
+# simulator_error: calculate the simulator errors.
+#              entire: errors between 'golden' and 'simulator'.
+#              single: single layer errors. (compare to 'entire', the input of each layer is come from 'golden')!
+# ('nan' means that tensor are 'all zeros', or 'all equal', or 'large values', etc)
+
+layer_name                                            simulator_error        
+                                                     entire    single        
+-----------------------------------------------------------------------------
+[Input] input                                       f_zero    f_zero         
+[exDataConvert] input_int8                          f_zero    f_zero         
+[exLSTM] 106                                        0.999899  0.999899       
+[exLSTM] 192                                        0.999864  0.999864       
+[exLSTM] 279                                        0.999885  0.999885       
+[Reshape] 279_shape4_MatMul_55                      0.999885  0.999888       
+[Reshape] MatMul_50_2gemm_2conv_reshape1_output     0.999885  0.999888       
+[Conv] 281_gemm_conv                                1.000000  1.000000       
+[exSoftmax13] 284                                   1.000000  1.000000       
+[MatMul] 286_shape4                                 0.999885  0.999888       
+[Reshape] Gemm_57_2conv_reshape1_output             0.999885  0.999888       
+[Conv] output_conv                                  1.000000  1.000000       
+[Reshape] output_int8                               1.000000  1.000000       
+[exDataConvert] output                              1.000000  1.000000       

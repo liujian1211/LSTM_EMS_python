@@ -1,0 +1,10 @@
+backup/*
+data/*
+model/*
+output/golden/*
+output/simulator/*
+rk3568/model/*.rknn
+rk3568/package/*
+rk3568/*.txt
+文档/*
+dataset*

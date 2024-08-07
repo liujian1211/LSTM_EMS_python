@@ -1,0 +1,16 @@
+layer_name                                          file_name                                           
+--------------------------------------------------------------------------------------------------------
+input                                               input.txt                                           
+input_int8                                          input_int8.txt                                      
+106                                                 106.txt                                             
+192                                                 192.txt                                             
+279                                                 279.txt                                             
+279_shape4_MatMul_55                                279_shape4_MatMul_55.txt                            
+MatMul_50_2gemm_2conv_reshape1_output               MatMul_50_2gemm_2conv_reshape1_output.txt           
+281_gemm_conv                                       281_gemm_conv.txt                                   
+284                                                 284.txt                                             
+286_shape4                                          286_shape4.txt                                      
+Gemm_57_2conv_reshape1_output                       Gemm_57_2conv_reshape1_output.txt                   
+output_conv                                         output_conv.txt                                     
+output_int8                                         output_int8.txt                                     
+output                                              output.txt                                          
